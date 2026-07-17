@@ -1,0 +1,12 @@
+;; data/culture-tx.edn — DataScript tx-data derived from src/culture/facts.cljc
+;; `culture.facts/catalog` (ADR-2607171400 addendum 2, Wave 1 country-level).
+;; Same shape across every cloud-itonami-iso3166-* sibling. Do not hand-edit;
+;; regenerate from the catalog.
+
+[
+#:culture{:id "mhl.dish.bwiro", :name "Bwiro", :country "MHL", :kind :dish, :summary "Traditional Marshallese fermented breadfruit paste, wrapped in banana leaves and cooked in an underground oven, that can be preserved for many months without spoiling.", :url "https://en.wikipedia.org/wiki/Marshallese_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mhl.dish.mokwan", :name "Mokwan", :country "MHL", :kind :dish, :summary "Preserved dried pandanus paste continuing to be produced by people on the northern atoll Ratak Chain islands of the Marshall Islands.", :url "https://en.wikipedia.org/wiki/Marshallese_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mhl.dish.chukuchuk", :name "Chukuchuk", :country "MHL", :kind :dish, :summary "Marshallese rice and coconut dish -- a ball shape made of calrose rice and shredded coconut flesh.", :url "https://en.wikipedia.org/wiki/Chukuchuk", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mhl.craft.stick-chart", :name "Stick chart", :country "MHL", :kind :craft, :summary "Traditional Marshallese navigation aid made and used to navigate the Pacific Ocean by canoe off the coast of the Marshall Islands, representing ocean swell patterns and island locations using wood, fiber and shells.", :url "https://en.wikipedia.org/wiki/Stick_chart", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mhl.heritage.bikini-atoll", :name "Bikini Atoll", :country "MHL", :kind :heritage, :summary "UNESCO World Heritage Site designated on 3 August 2010, bearing direct tangible evidence of nuclear testing that symbolises the dawn of the nuclear age.", :url "https://en.wikipedia.org/wiki/Bikini_Atoll", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+]
