@@ -18,7 +18,8 @@ behavior.
 - Do not commit real client, business-registration or bid data.
 - Keep production actions behind the Market-Entry Compliance Governor.
 - Never let the advisor state a legal/tax conclusion as fact — every
-  regulatory requirement must cite the official source for Cambodia.
+  regulatory requirement must cite the official source for the
+  Marshall Islands.
 - Document any new business-model or operator assumption in `docs/`.
 
 ## Pull Requests
