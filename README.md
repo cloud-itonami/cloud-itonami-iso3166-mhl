@@ -115,6 +115,55 @@ market-entry operator always makes the actuation call.
 - https://rmiparliament.org/cms/library/public-laws-by-years/51-public-laws-by-years-2023.html
   (Procurement Code Act, 2023 -- P.L. 2023-62)
 
+## Statute catalog
+
+Alongside `marketentry.facts` (public-procurement market-entry only,
+narrow scope), this repo carries a **general-law compliance catalog**
+(ADR-2607141700, `cloud-itonami-compliance-fact-federation`) -- a
+second, orthogonal set of statutes a company operating in the Marshall
+Islands must generally track for compliance:
+
+- `src/statute/facts.cljc` -- company/business-associations law (Title
+  52 Associations Law, Business Corporations Act, P.L. 1990-91), two
+  labor-law statutes (Title 16: the Minimum Wage Act 1986, and the
+  Labor (Non-Resident Workers) Act 2018, which establishes the Labor
+  Division/Director of Labor administering authority), and income tax
+  law (Title 48, Income Tax Act 1989). Every entry cites an official
+  `rmiparliament.org` (Nitijela of the Republic of the Marshall
+  Islands) legislation-database PDF, fetched and read directly this
+  iteration -- no Cloudflare/bot-detection wall was encountered on this
+  source.
+
+This namespace does **not** contradict `marketentry.facts`'s dual-track
+framing or its "do not assert MICA" caution -- it is the same Business
+Corporations Act read further: the Act's own §4 establishes two
+Registrars of Corporations, and its own §2(p) names the non-resident
+registrar "The Trust Company of the Marshall Islands, Inc.," which is
+consistent with (and more precise than) `marketentry.facts`'s hedged
+"IRI (International Registries, Inc.)" framing. See the namespace
+docstring in `src/statute/facts.cljc` for the full research trail,
+including the honest gap on MHL's income-tax law: this iteration
+confirmed the general gross-revenue-tax citation `marketentry.facts`
+already asserted but did not locate a distinct blanket non-resident/
+offshore corporate-tax exemption clause.
+
+### Sources actually fetched and read
+
+- https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/1990/1990-0091/1990-0091_9.pdf
+  (Business Corporations Act 1990, Title 52 Ch.1 -- official Nitijela
+  consolidated text, version 9)
+- https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/1986/1986-0015/1986-0015_4.pdf
+  (Minimum Wage Act 1986, Title 16 Ch.4)
+- https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2018/2018-0068/2018-0068_2.pdf
+  (Labor (Non-Resident Workers) Act 2018, Title 16 Ch.1)
+- https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/1989/1989-0050/1989-0050_5.pdf
+  (Income Tax Act 1989, Title 48 Ch.1)
+- https://www.register-iri.com/corporate/legal/associations-law/ and its
+  linked courtesy-copy PDF (cross-read only, for corroboration -- the
+  rmiparliament.org version above is the one cited as `:statute/url`,
+  being newer and the official government database rather than a
+  publisher's courtesy copy)
+
 ## Culture catalog
 
 Alongside the market-entry / statute catalogs, this repo carries a

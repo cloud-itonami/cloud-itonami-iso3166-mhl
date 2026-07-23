@@ -49,6 +49,6 @@ jobs:
         with: { distribution: temurin, java-version: "21" }
       - uses: DeLaGuardo/setup-clojure@13.4
         with: { cli: latest }
-      - name: test (governor contract · facts · phases · registry · store · culture)
+      - name: test (governor contract · facts · phases · registry · store · culture · statute)
         working-directory: orgs/cloud-itonami/cloud-itonami-iso3166-mhl
         run: clojure -M:dev:test
