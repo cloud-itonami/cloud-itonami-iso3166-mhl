@@ -70,7 +70,7 @@
           ;; `:cited-procurement-basis` engagement field is expected to
           ;; contain for `procurement-basis-current?` to accept it (see
           ;; `marketentry.store/demo-data` eng-1 and
-          ;; test/marketentry/facts_test.clj). Effective-date/repeal
+          ;; test/marketentry/facts_test.cljk). Effective-date/repeal
           ;; prose lives in the top-level `:legal-basis` field instead,
           ;; not here, so this stays a stable exact-match citation.
           :procurement-legal-basis "Procurement Code Act, 2023 (P.L. 2023-62)"
