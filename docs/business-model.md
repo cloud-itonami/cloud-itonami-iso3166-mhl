@@ -4,7 +4,7 @@ Market-entry compliance for Marshall Islands.
 
 ## General-law compliance catalog
 
-`src/statute/facts.cljc` tracks the general-law compliance framework
+`src/statute/facts.cljk` tracks the general-law compliance framework
 alongside market-entry: the Business Corporations Act (Title 52
 Associations Law, P.L. 1990-91 -- the same Act that operates both the
 domestic and non-resident/offshore registration tracks), the Minimum

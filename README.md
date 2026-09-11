@@ -52,7 +52,7 @@ engagement-fee-mismatch / confidence-actuation-gate /
 double-draft / double-submit machinery (shared with every sibling
 actor in this fleet), this vertical adds five checks, each grounded in
 a specific verified fact and each exercised by its own test in
-`test/marketentry/governor_contract_test.clj`:
+`test/marketentry/governor_contract_test.cljk`:
 
 1. **`domestic-track-missing`** -- see above. Grounded in the
    dual-track registry structure (register-iri.com /
@@ -123,7 +123,7 @@ narrow scope), this repo carries a **general-law compliance catalog**
 second, orthogonal set of statutes a company operating in the Marshall
 Islands must generally track for compliance:
 
-- `src/statute/facts.cljc` -- company/business-associations law (Title
+- `src/statute/facts.cljk` -- company/business-associations law (Title
   52 Associations Law, Business Corporations Act, P.L. 1990-91), two
   labor-law statutes (Title 16: the Minimum Wage Act 1986, and the
   Labor (Non-Resident Workers) Act 2018, which establishes the Labor
@@ -141,7 +141,7 @@ Registrars of Corporations, and its own §2(p) names the non-resident
 registrar "The Trust Company of the Marshall Islands, Inc.," which is
 consistent with (and more precise than) `marketentry.facts`'s hedged
 "IRI (International Registries, Inc.)" framing. See the namespace
-docstring in `src/statute/facts.cljc` for the full research trail,
+docstring in `src/statute/facts.cljk` for the full research trail,
 including the honest gap on MHL's income-tax law: this iteration
 confirmed the general gross-revenue-tax citation `marketentry.facts`
 already asserted but did not locate a distinct blanket non-resident/
@@ -172,7 +172,7 @@ Alongside the market-entry / statute catalogs, this repo carries a
 `com-junkawasaki/root`) — national dishes, protected products, beverages,
 crafts, festivals and heritage sites for the Marshall Islands:
 
-- `src/culture/facts.cljc` — the catalog, source of truth (keyed by
+- `src/culture/facts.cljk` — the catalog, source of truth (keyed by
   uppercase ISO3, mirroring `statute.facts`).
 - `schema/culture.edn` — DataScript schema.
 - `data/culture-tx.edn` — derived DataScript tx-data (regenerated from
