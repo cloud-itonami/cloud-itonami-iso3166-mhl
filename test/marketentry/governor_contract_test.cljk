@@ -27,7 +27,7 @@
        procurement-bidding preference is HELD, regardless of the
        bidder's claimed nationality -- the governor never grants a
        bidding advantage on this basis."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [langgraph.graph :as g]
             [marketentry.store :as store]
             [marketentry.operation :as op]))
